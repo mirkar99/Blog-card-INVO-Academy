@@ -1,0 +1,14 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+$tablet-break-point: 834px;
+
+#home-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--home-page-bgColor);
+  min-height: 100vh;
+}
+
+@import 'blog-card/blog-card.scss'

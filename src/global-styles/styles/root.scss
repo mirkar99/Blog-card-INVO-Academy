@@ -1,0 +1,37 @@
+/// Root Styles file
+/// Here we define all the root variables we need for our project.
+/// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
+:root {
+    --color-on-surface: #000;
+}
+
+#home-page {
+    --home-page-bgColor: #EDEDED;
+}
+
+.blog-card {
+    --blog-card-bgColor: #FFFFFF;
+}
+
+.blog-card__info {
+    --line-height: 36px;
+    --info-time-color: #7C7C7C;
+    --info-time-fontSize: 12px;
+    --author-name-color: #000000;
+    --author-name-fontSize: 12px;
+}
+
+.blog-card__content {
+    --content-gap: 8px;
+    --content-title-color: #000000;
+    --content-text-color: #7C7C7C;
+    --content-title-fontSize: 18px;
+    --content-text-fontSize: 14px;
+
+}
+
+.blog-card__footer {
+    --footer-margin-bottom: 24px;
+    --footer-text-color: #000000;
+    --footer-text-fontSize: 14px;
+}

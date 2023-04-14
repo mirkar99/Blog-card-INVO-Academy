@@ -1,0 +1,33 @@
+.blog-card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--blog-card-bgColor);
+    min-height: 519px;
+    max-width: max(70%, 343px);
+    gap: 24px;
+    border-radius: 10px;
+
+    & {
+        @import 'partials/blog-card-img.scss';
+        @import 'partials/blog-card-info.scss';
+        @import 'partials/blog-card-content.scss';
+        @import 'partials/blog-card-footer.scss';
+    }
+
+    @media screen and (min-width:$tablet-break-point) {
+        min-height: 571px;
+        max-width: 608px;
+        gap: 32px;
+    }
+
+    &:hover &__img-container img {
+        transform: scale(1.1);
+    }
+
+    &:hover &__footer .blog-card__text {
+        text-decoration: underline solid Currentcolor;
+    }
+}

@@ -1,0 +1,33 @@
+&__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(100% - 32px);
+    gap: 12px;
+    margin-bottom: var(--footer-margin-bottom);
+
+    .blog-card__text {
+        font-size: var(--footer-text-fontSize);
+        font-weight: 500;
+        color: var(--footer-text-color);
+        text-decoration: underline solid transparent;
+        transition: text-decoration 0.2s ease;
+    }
+
+    .blog-card__icon {
+        align-self: normal;
+        height: 12px;
+        width: 12px;
+
+        @media screen and (min-width:$tablet-break-point) {
+            align-self: unset;
+            height: 14px;
+            width: 14px;
+        }
+    }
+
+    @media screen and (min-width:$tablet-break-point) {
+        --footer-margin-bottom: 22px;
+        --footer-text-fontSize: 16px;
+    }
+}
